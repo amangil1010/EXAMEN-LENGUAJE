@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Los_Remedios_SA SYSTEM "Los_Remedios_SA.dtd">
+<Los_Remedios_SA>
+    <Localizacion_Sede_Central>Ubrique</Localizacion_Sede_Central>
+    <Pedidos Codigo="A0000000">
+        <Codigo_Sucursal>a1234567</Codigo_Sucursal>
+        <Nombre_Trabajador_Realiza_Pedido></Nombre_Trabajador_Realiza_Pedido>
+        <Fecha_Pedido></Fecha_Pedido>
+        <Observaciones_Pedido></Observaciones_Pedido>
+        <Articulos Codigo="AAA-001">
+            <Codigo_Articulo>AAA-111</Codigo_Articulo>
+            <Numero_De_Unidades></Numero_De_Unidades>
+            <Precio_De_Unidad></Precio_De_Unidad>
+            <Observaciones_Articulo></Observaciones_Articulo>
+            <Plazo_De_Revision></Plazo_De_Revision>>
+        </Articulos>
+    </Pedidos>
+</Los_Remedios_SA>

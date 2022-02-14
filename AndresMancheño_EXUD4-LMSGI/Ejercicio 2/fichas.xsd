@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="fichas" type="fichasDatos"/>
+    <xs:complexType name="fichasDatos">
+        <xs:sequence>
+            <xs:element name="ficha" type="fichaDatos"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="fichaDatos">
+        <xs:sequence>
+            <xs:element name="nombre" type="xs:string"/>
+            <xs:element name="edad" type="xs:string"/>
+        </xs:sequence>
+        <xs:attribute name="codigo" type="CodigoTipo" use="required"/>
+    </xs:complexType>
+    <xs:simpleType name="CodigoTipo">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[0-9]1"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

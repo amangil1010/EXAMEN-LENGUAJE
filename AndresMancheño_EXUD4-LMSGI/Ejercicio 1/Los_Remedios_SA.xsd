@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="Los_Remedios_SA" type="Los_Remedios_SA_Datos"/>
+    <xs:complexType name="Los_Remedios_SA_Datos">
+        <xs:sequence>
+            <xs:element name="Localizacion_Sede_Central" type="xs:string"/>
+            <xs:element name="Pedidos" type="PedidosDatos" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="PedidosDatos">
+        <xs:sequence>
+            <xs:element name="Codigo_Sucursal">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:pattern value="[A-Za-z]([0-9])7"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="Nombre_Trabajador_Realiza_Pedido" type="xs:string"/>
+            <xs:element name="Fecha_Pedido" type="xs:date"/>
+            <xs:element name="Observaciones_Pedido" type="xs:string"/>
+            <xs:element name="Articulos" type="DatosArticulos"/>
+        </xs:sequence>
+    </xs:complexType>
+        <xs:complexType name="DatosArticulos">
+           <xs:sequence>
+               <xs:element name="Codigo_Articulo">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:pattern value="([A-Z])3-([0-9])3"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+               </xs:element>
+               <xs:element name="Numero_De_Unidades" type="xs:string"/>
+               <xs:element name="Precio_De_Unidad">
+                   <xs:simpleType>
+                       <xs:restriction base="xs:decimal">
+                            <xs:minInclusive value="1"/>
+                       </xs:restriction>
+                   </xs:simpleType>
+               </xs:element>
+               <xs:element name="Observaciones_Articulo" type="xs:string"/>
+               <xs:element name="Plazo_De_Revision" type="xs:date"/>
+           </xs:sequence>
+        </xs:complexType>
+</xs:schema>

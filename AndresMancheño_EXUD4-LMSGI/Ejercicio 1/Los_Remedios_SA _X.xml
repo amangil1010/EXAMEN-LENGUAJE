@@ -1,0 +1,16 @@
+<Los_Remedios_SA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Los_Remedios_SA.xsd">
+    <Localizacion_Sede_Central>Ubrique</Localizacion_Sede_Central>
+    <Pedidos>
+        <Codigo_Sucursal>a123456</Codigo_Sucursal>
+        <Nombre_Trabajador_Realiza_Pedido>Antonio</Nombre_Trabajador_Realiza_Pedido>
+        <Fecha_Pedido>2002-02-22</Fecha_Pedido>
+        <Observaciones_Pedido>Buen Estado</Observaciones_Pedido>
+        <Articulos>
+            <Codigo_Articulo>AAA-111</Codigo_Articulo>
+            <Numero_De_Unidades>1</Numero_De_Unidades>
+            <Precio_De_Unidad>10</Precio_De_Unidad>
+            <Observaciones_Articulo> Buen Articulo</Observaciones_Articulo>
+            <Plazo_De_Revision>2002-02-22</Plazo_De_Revision>
+        </Articulos>
+    </Pedidos>
+</Los_Remedios_SA>

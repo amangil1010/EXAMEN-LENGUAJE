@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT Los_Remedios_SA (Localizacion_Sede_Central, Pedidos*)>
+<!ELEMENT Localizacion_Sede_Central (#PCDATA)>
+<!ELEMENT Pedidos (Codigo_Sucursal, Nombre_Trabajador_Realiza_Pedido, Fecha_Pedido, Observaciones_Pedido, Articulos*)>
+<!ATTLIST Pedidos Codigo ID #REQUIRED>
+<!ELEMENT Codigo_Sucursal (#PCDATA)>
+<!ELEMENT Nombre_Trabajador_Realiza_Pedido (#PCDATA)>
+<!ELEMENT Fecha_Pedido (#PCDATA)>
+<!ELEMENT Observaciones_Pedido (#PCDATA)>
+<!ELEMENT Articulos (Codigo_Articulo, Numero_De_Unidades, Precio_De_Unidad, Observaciones_Articulo, Plazo_De_Revision)>
+<!ATTLIST Articulos Codigo ID #REQUIRED>
+<!ELEMENT Codigo_Articulo (#PCDATA)>
+<!ELEMENT Numero_De_Unidades (#PCDATA)>
+<!ELEMENT Precio_De_Unidad (#PCDATA)>
+<!ELEMENT Observaciones_Articulo (#PCDATA)>
+<!ELEMENT Plazo_De_Revision (#PCDATA)>
